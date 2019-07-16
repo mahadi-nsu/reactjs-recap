@@ -21,6 +21,11 @@ export default class App extends Component {
     ]
   };
   render() {
-    return <div />;
+    return (
+      <div>
+        <Form />
+        <CardList cards={this.state.cards} />
+      </div>
+    );
   }
 }
